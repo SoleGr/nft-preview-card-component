@@ -1,0 +1,147 @@
+:root{
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line-color:hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+
+
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Outfit';
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+hr {
+    border-top: 1px solid;
+    border-color: hsl(215, 32%, 27%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover{
+    color: aqua;
+}
+
+.creator {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.avatar {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: var(--white);
+}
+
+#creator-name {
+    color: var(--soft-blue);
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card{
+    background-color: var(--card-bg);
+    width: 308px;
+    height: auto;
+    border-radius: 3%;
+    padding: 20px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card-image {
+    width: 308px;
+    height: auto;
+    border-radius: 3%;
+    display: block;
+    margin: auto;
+}
+
+.transaction-info {
+    display: flex;
+    justify-content:space-between;
+    vertical-align: middle;
+}
+
+.transaction-price {
+    color: aqua;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.transaction-time-left {
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+}
+
+.nft-image {
+	background: aqua;
+    border-radius: 3%;
+}
+
+.nft-image:hover img {
+	opacity: .5;
+}
+
+.nft-image:hover::before {
+    content: "";
+    position: absolute;
+    background: url(../images/icon-view.svg);
+    background-size: cover;
+    z-index: 10;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+
+.attribution {
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 11px;
+    text-align: center;
+    color: var(--soft-blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
